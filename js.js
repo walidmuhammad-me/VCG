@@ -95,11 +95,17 @@ form.addEventListener('submit', async (e) => {
         if (data.success) {
             showMessage(translations[currentLang].success, 'success');
             form.reset();
+            // Log success for debugging
+            console.log('Email sent successfully:', data);
         } else {
-            showMessage(translations[currentLang].error, 'error');
+            // Show more detailed error message
+            const errorMsg = data.message || translations[currentLang].error;
+            showMessage(errorMsg, 'error');
+            console.error('Email sending failed:', data);
         }
     } catch (error) {
         showMessage(translations[currentLang].networkError, 'error');
+        console.error('Network error:', error);
     } finally {
         loadingContainer.style.display = 'none';
     }
