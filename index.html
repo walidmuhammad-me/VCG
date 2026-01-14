@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="icon" type="image/png" href="logo.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="design.css">
+</head>
+
+<body>
+    <div class="particles-container"></div>
+
+    <div class="loading-container">
+        <div class="loading-dots">
+            <div class="loading-dot"></div>
+            <div class="loading-dot"></div>
+            <div class="loading-dot"></div>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <div class="lang-switcher">
+            <select id="language-switcher">
+                <option value="krb" selected>کوردی بادینی</option>
+                <option value="krs">کوردی سورانی</option>
+                <option value="ar">عربی</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+
+        <div class="dc">
+            <div class="chart-container">
+                <div class="chart-wrapper"></div>
+            </div>
+        </div>
+
+        <img src="logo.jpg" alt="logo" class="logo">
+        <h2 class="form-title" data-translate="title">پەیوەندی</h2>
+        <!-- <p class="form-subtitle" data-translate="subtitle">لە ماوەی ٢٤ کاتژمێرێکدا پەیوەندیت پێدەکەینەوە</p> -->
+
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="c74bd22d-1219-4e6f-8a54-a6e2fd2b3564">
+
+            <div class="form-group">
+                <label data-translate="fullname">ناوی تەواو</label>
+                <input type="text" name="fullname" required>
+            </div>
+
+            <div class="form-group">
+                <label data-translate="phone">ژمارەی مۆبایل</label>
+                <div class="phone-input">
+                    <select name="country_code" class="country-code" required>
+                        <option value="+355 (Albania)">🇦🇱 +355</option>
+                        <option value="+43 (Austria)">🇦🇹 +43</option>
+                        <option value="+973 (Bahrain)">🇧🇭 +973</option>
+                        <option value="+32 (Belgium)">🇧🇪 +32</option>
+                        <option value="+387 (Bosnia and Herzegovina)">🇧🇦 +387</option>
+                        <option value="+359 (Bulgaria)">🇧🇬 +359</option>
+                        <option value="+86 (China)">🇨🇳 +86</option>
+                        <option value="+385 (Croatia)">🇭🇷 +385</option>
+                        <option value="+357 (Cyprus)">🇨🇾 +357</option>
+                        <option value="+420 (Czech Republic)">🇨🇿 +420</option>
+                        <option value="+45 (Denmark)">🇩🇰 +45</option>
+                        <option value="+20 (Egypt)">🇪🇬 +20</option>
+                        <option value="+358 (Finland)">🇫🇮 +358</option>
+                        <option value="+33 (France)">🇫🇷 +33</option>
+                        <option value="+49 (Germany)">🇩🇪 +49</option>
+                        <option value="+30 (Greece)">🇬🇷 +30</option>
+                        <option value="+36 (Hungary)">🇭🇺 +36</option>
+                        <option value="+354 (Iceland)">🇮🇸 +354</option>
+                        <option value="+98 (Iran)">🇮🇷 +98</option>
+                        <option value="+964 (Iraq)" selected>🇮🇶 +964</option>
+                        <option value="+353 (Ireland)">🇮🇪 +353</option>
+                        <option value="+39 (Italy)">🇮🇹 +39</option>
+                        <option value="+962 (Jordan)">🇯🇴 +962</option>
+                        <option value="+965 (Kuwait)">🇰🇼 +965</option>
+                        <option value="+961 (Lebanon)">🇱🇧 +961</option>
+                        <option value="+218 (Libya)">🇱🇾 +218</option>
+                        <option value="+352 (Luxembourg)">🇱🇺 +352</option>
+                        <option value="+356 (Malta)">🇲🇹 +356</option>
+                        <option value="+31 (Netherlands)">🇳🇱 +31</option>
+                        <option value="+389 (North Macedonia)">🇲🇰 +389</option>
+                        <option value="+47 (Norway)">🇳🇴 +47</option>
+                        <option value="+968 (Oman)">🇴🇲 +968</option>
+                        <option value="+970 (Palestine)">🇵🇸 +970</option>
+                        <option value="+48 (Poland)">🇵🇱 +48</option>
+                        <option value="+351 (Portugal)">🇵🇹 +351</option>
+                        <option value="+974 (Qatar)">🇶🇦 +974</option>
+                        <option value="+40 (Romania)">🇷🇴 +40</option>
+                        <option value="+7 (Russia)">🇷🇺 +7</option>
+                        <option value="+966 (Saudi Arabia)">🇸🇦 +966</option>
+                        <option value="+381 (Serbia)">🇷🇸 +381</option>
+                        <option value="+421 (Slovakia)">🇸🇰 +421</option>
+                        <option value="+386 (Slovenia)">🇸🇮 +386</option>
+                        <option value="+34 (Spain)">🇪🇸 +34</option>
+                        <option value="+46 (Sweden)">🇸🇪 +46</option>
+                        <option value="+41 (Switzerland)">🇨🇭 +41</option>
+                        <option value="+963 (Syria)">🇸🇾 +963</option>
+                        <option value="+90 (Turkey)">🇹🇷 +90</option>
+                        <option value="+971 (UAE)">🇦🇪 +971</option>
+                        <option value="+44 (United Kingdom)">🇬🇧 +44</option>
+                    </select>
+                    <input type="tel" name="phone" class="phone-number" pattern="{5-15}" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label data-translate="email">ئیمەیڵ</label>
+                <input type="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label data-translate="language">زمانی پەسەند</label>
+                <select name="language" required>
+                    <option value="Kurdish-Badini" selected>کوردی بادینی</option>
+                    <option value="Kurdish-Sorani">کوردی سورانی</option>
+                    <option value="Arabic">عربی</option>
+                    <option value="English">English</option>
+                </select>
+            </div>
+
+            <div class="form-group message-group">
+                <label class="message-label" data-translate="message">
+                    Message
+                </label>
+                <textarea name="message" class="message-input" rows="4"></textarea>
+            </div>
+
+            <button type="submit" data-translate="submit">ناردنی پەیام</button>
+        </form>
+
+        <div class="social-links">
+            <a href="https://wa.me/9647500310444" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                </svg>
+            </a>
+        </div>
+
+        <div class="numbers-container" dir="ltr">
+            <div class="number-box">
+                <div class="number-content">
+                    <span class="number-text">+964 0750 031 0444</span>
+                    <button class="copy-btn" aria-label="Copy number">
+                        <svg class="copy-icon" viewBox="0 0 24 24">
+                            <path
+                                d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12V1z" />
+                        </svg>
+                        <span class="copy-tooltip">Copy</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="copy-feedback">Copied to clipboard!</div>
+        </div>
+    </div>
+
+    <div id="form-message"></div>
+
+    <footer class="copyright-bar">
+        <a class="webgentelmans" href="https://www.instagram.com/cak_tech/?utm_source=ig_web_button_share_sheet"
+            target="_blank">
+            <p data-translate="copyright">Made By CakTech</p>
+        </a>
+    </footer>
+
+    <script src="js.js"></script>
+</body>
+
+</html>
